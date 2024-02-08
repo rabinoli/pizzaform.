@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Order Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Pizza Order Form</h1>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+
+        <!-- Pizza Order Form -->
+        <form action="/submit_order" method="post">
+            <fieldset>
+                <legend>Order Information</legend>
+
+                <!-- Number of Pizzas -->
+                <label for="numPizzas">Number of Pizzas:</label>
+                <input type="number" id="numPizzas" name="numPizzas" min="1" required>
+
+                <!-- Size of Pizzas -->
+                <label for="pizzaSize">Size of Pizzas:</label>
+                <select id="pizzaSize" name="pizzaSize" required>
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+
+                <!-- Shape of Pizzas -->
+                <label>Shape of Pizzas:</label>
+                <input type="radio" id="round" name="pizzaShape" value="round" checked>
+                <label for="round">Round</label>
+                <input type="radio" id="square" name="pizzaShape" value="square">
+                <label for="square">Square</label>
+
+                <!-- Toppings -->
+                <label for="toppings">Toppings:</label>
+                <input type="text" id="toppings" name="toppings">
+
+                <!-- Crust Type -->
+                <label for="crustType">Crust Type:</label>
+                <select id="crustType" name="crustType">
+                    <option value="deepDish">Deep Dish</option>
+                    <option value="thinCrust">Thin Crust</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <!-- Service Type -->
+                <label>Service Type:</label>
+                <input type="radio" id="takeout" name="serviceType" value="takeout" checked>
+                <label for="takeout">Takeout</label>
+                <input type="radio" id="delivery" name="serviceType" value="delivery">
+                <label for="delivery">Delivery</label>
+                <input type="radio" id="eatIn" name="serviceType" value="eatIn">
+                <label for="eatIn">Eat-In</label>
+
+            </fieldset>
+
+            <!-- Additional Comments -->
+            <label for="comments">Additional Comments:</label>
+            <textarea id="comments" name="comments" rows="4"></textarea>
+
+            <!-- Submit and Reset Buttons -->
+            <input type="submit" value="Place Order">
+            <input type="reset" value="Reset Form">
+
+        </form>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <!-- Image Illustration -->
+        <p>Enjoy your pizza! <img src="https://www.pngall.com/wp-content/uploads/2016/05/Pizza-Transparent.png" alt="Delicious Pizza"></p>
+    </footer>
+    <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="+91 0000000000" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="deliveryDate">Delivery Date:</label>
+                <input type="date" id="deliveryDate" name="deliveryDate">
+                <label>Extra Cheese:</label>
+                <input type="checkbox" id="extraCheese" name="extraCheese" value="yes">
+                <label for="extraCheese">Yes</label>
+                <label for="color">Select Pizza Color:</label>
+                <input type="color" id="color" name="color">
+                <label for="spiciness">Spiciness Level:</label>
+                <input type="range" id="spiciness" name="spiciness" min="1" max="10" step="1">
+                <label for="satisfaction">Satisfaction Level:</label>
+                <meter id="satisfaction" name="satisfaction" min="0" max="100" value="50"></meter>
+                <label for="orderProgress">Order Progress:</label>
+                <progress id="orderProgress" name="orderProgress" value="50" max="100"></progress>'
+
+</body>
+
+</html>
